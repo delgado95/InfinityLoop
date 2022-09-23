@@ -5,52 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinit Loop</title>
-      <!-- CSS -->
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Vamos fazer um loop</h1>
     </header>
-    <main>
-        <form>
-            <div class="">
-                <label>Insira o texto a ser <span>Multiplicado</span></label>
-                <input type="text">
-            </div>
-
-            <div class="input-group mb-3 form-field">
-                <label>Insira o texto a ser <span>Multiplicado</span></label>
-                <input type="text" class="form-control" >
-            </div>
-                
-            <div class="form-field">
-                <label>Insira o numero a ser o<span>Multiplicador</span></label>
-                <input type="number">
-            </div>
-                
-            <div class="form-field">
-                <label>Insira qualquer<span>Caracter</span></label>
-                <input type="text">
-            </div>
-        </form>
-        <div class="btn-group">
-            <button type="submit" class="btn-save">Criar</button>
-            <button type="reset" class="btn-delete">Deletar</button>
+    <form>
+        <div class="row m-3">
+            <div class="col mb-3">
+                <label for="text" class="form-label">Frase a ser Multiplicada:<span>*</span></label>
+                <input type="text" class="form-control" id="text" required>
+              </div>
+              <div class="col mb-3">
+                <label for="number" class="form-label">Numero de vezes a ser Multiplicado:<span>*</span></label>
+                <input type="number" class="form-control" id="number" required>
+              </div>
+              <div class="col mb-3">
+                  <label for="caracter" class="form-label">Insira um caracter:<span>*</span></label>
+                  <input type="txet" class="form-control" id="caracter" required>
+                </div>
         </div>
-    </main>
+        <div class="d-flex justify-content-center text-aling-center">
+            <button type="button" class="btn btn-save m-3" onclick="save()">Salvar</button>
+            <button type="reset" class="btn btn-delete m-3">Cancelar</button>
+        </div>
+      </form>
     <aside>
-        <label>Seu texto foi Multiplicado</label>
-        <textarea rows="5"></textarea>
-        <button type="button" class="btn-copy">Copiar</button>
+        <div class="row">
+            <div class="col-12">
+                <label>Seu texto foi Multiplicado</label>
+                <textarea class="form-control" id="textarea" type="text" rows="5" placeholder="Pegue sua frase aqui" disabled></textarea>
+              </div>
+            <div class="col-12">
+                <button type="button" id="btnCopy" class="btn btn-copy m-3">Copiar</button>
+            </div>
+        </div>
     </aside>
     <footer>
         <h1>Delgado's Sites</h1>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

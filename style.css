@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +10,8 @@ body{
     width: 100%;
     height: 100%;
     background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 
 header{
@@ -17,38 +21,7 @@ header{
 }
 
 label{
-    margin: 5px;
-    font-size: large;
     color: white;
-    text-align: center;
-    justify-content: center;
-}
-
-input{
-    margin-top: 3px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 5px;
-    text-align: center;
-    justify-content: center;
-}
-
-textarea{
-    margin-top: 5px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 5px;
-    text-align: center;
-    justify-content: center;
-}
-
-form{
-    margin: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
 }
 
 .form-field{
@@ -67,23 +40,27 @@ form{
 }
 
 button{
-    border-radius: 4px;
-    border: none;
-    margin: 7px;
-    width: 100px;
-    height: 30px;
+    color: white;
 }
 
+
 .btn-save{
-    background-color: lawngreen;
+    background-color: green;
+    color: white;
 }
 
 .btn-delete{
     background-color: red;
+    color: white;
 }
 
 .btn-copy{
-    background-color: lightblue;
+    background-color: darkcyan;
+    color: white;
+}
+
+span{
+    color: brown;
 }
 
 aside{
